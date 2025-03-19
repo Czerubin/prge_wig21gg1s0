@@ -7,4 +7,4 @@ RUN npm install
 
 COPY config/node/frontend .
 
-CMD ['npm', 'start']
+CMD ["npm", "start"]
