@@ -1,5 +1,6 @@
 import React from "react";
 import "./Services.css";
+import { Link } from "react-router-dom";
 
 import dziekan_wig from "./dziekan_wig.jpg";
 
@@ -14,12 +15,16 @@ function Services() {
             <h1 className="home_title">Dostępne usługi</h1>
           </div>
           <div className="services_buttons">
-            <button className="services_button" id="mapa">
-              MAPA
-            </button>
-            <button className="services_button" id="mapa">
-              WYKAZ lub lista czegoś
-            </button>
+            <Link to="map">
+              <button className="services_button" id="Lista">
+                MAPA
+              </button>
+            </Link>
+            <Link to="militaryunits">
+              <button className="services_button" id="mapa">
+                WYKAZ lub lista czegoś
+              </button>
+            </Link>
           </div>
         </div>
         <div className="services_bottomRight">
